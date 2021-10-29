@@ -5,3 +5,5 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.modal').modal();
   });
+
+  $('').css('overflow', 'hidden');
