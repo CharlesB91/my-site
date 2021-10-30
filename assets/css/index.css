@@ -12,6 +12,12 @@ html {
 
 #text {
   margin-left: 10px;
+  color: #272932;
+  font-weight: bold;
+}
+
+#nav-link a {
+  color: #272932;
 }
 
 #main {
@@ -28,7 +34,8 @@ h1 {
 }
 
 #nav {
-  background-color: #272932;
+  background-color: #ece2d0;
+  color: #272932;
 }
 
 #main img {
@@ -43,7 +50,6 @@ h1 {
   height: 100%;
   background-color: #272932;
   overflow: hidden;
-  
 }
 
 #portfolio > h2 {
@@ -61,7 +67,7 @@ h1 {
 }
 
 .about-me {
-  height: 700px;
+  height: 800px;
   background-color: #ece2d0;
   overflow: hidden;
 }
@@ -71,9 +77,14 @@ h1 {
 }
 
 #statement {
-    text-align: center;
+  text-align: center;
 }
 
 #about-head {
-    text-align: center;
+  text-align: center;
+}
+
+.card-panel {
+  height: 200px;
+  background-color: #272932;
 }
