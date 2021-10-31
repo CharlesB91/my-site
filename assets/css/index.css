@@ -93,13 +93,13 @@ h1 {
 
 #contact {
   height: 100%;
-  background-color: #272932;
+  background-color: #ece2d0;
   overflow: hidden;
 }
 
 #footer-head {
   text-align: center;
-  color: #ece2d0;
+  color: #272932;
 }
 
 #form {
@@ -110,4 +110,18 @@ h1 {
 #row1 {
   background-color: #ece2d0;
   width: 900px;
+}
+
+.btn2 {
+  margin-top: 5px;
+  margin-left: 15px;
+  background-color: #272932;
+}
+
+.btn1 {
+  background-color: #272932;
+}
+
+#return {
+  display: none;
 }
