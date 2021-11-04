@@ -1,12 +1,18 @@
+// Nav Bar
+
 $(document).ready(function () {
   $(".sidenav").sidenav();
 });
+
+// Portfolio Cards
 
 $(document).ready(function () {
   $(".modal").modal();
 });
 
 $("").css("overflow", "hidden");
+
+// Contact Form
 
 $("#name, #email, #textarea1").bind("keyup", function () {
   if (allFilled()) $("#register").removeAttr("disabled");

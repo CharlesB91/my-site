@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Playfair+Display&display=swap");
 
+/* Global */
+
 html,
 body {
   width: 100%;
@@ -9,6 +11,8 @@ body {
   overflow-x: hidden;
   font-family: "Merriweather Sans", sans-serif;
 }
+
+/* Nav Bar */
 
 #text {
   margin-left: 10px;
@@ -39,6 +43,12 @@ h1 {
   color: #272932;
 }
 
+.fas {
+  color: #272932;
+}
+
+/* Image */
+
 #main img {
   height: 300px;
   width: 300px;
@@ -46,6 +56,8 @@ h1 {
   padding: 20px;
   margin-top: 20px;
 }
+
+/* Portfolio Section */
 
 #portfolio {
   height: 500px;
@@ -64,9 +76,10 @@ h1 {
 }
 
 .card {
-  margin-top: 40px;
   height: 200px;
 }
+
+/* About Me Section */
 
 .about-me {
   background-color: #ece2d0;
@@ -86,6 +99,8 @@ h1 {
   font-size: 150%;
   padding: 20px;
 }
+
+/* Contact Form Section */
 
 #contact {
   height: 100%;
@@ -122,3 +137,33 @@ h1 {
   display: none;
 }
 
+@media screen and (max-width: 1000px) {
+  #portfolio {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    height: 950px;
+  }
+
+  .card {
+    height: 180px;
+  }
+  #text {
+    font-size: 120%;
+  }
+  h1,
+  h2 {
+    font-size: 200%;
+  }
+  .about-text {
+    font-size: 110%;
+    padding: 20px;
+  }
+  #main img {
+    height: 250px;
+    width: 250px;
+  }
+}
