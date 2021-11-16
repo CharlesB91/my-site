@@ -100,6 +100,18 @@ h1 {
   padding: 20px;
 }
 
+/* My Stack Section */
+
+#stack {
+  height: 300px;
+  text-align: center;
+  background-color: #272932;
+}
+
+#stack-heading {
+  color: #ece2d0;
+}
+
 /* Contact Form Section */
 
 #contact {
