@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa5819adb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_DJR7ZIPL1RXCmr5Z091nO");
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <head>
+      <!-- Nav Bar -->
+      <nav id="nav">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo" id="text">Charles Ballantyne</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <ul class="right hide-on-med-and-down" id="nav-link">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </head>
+    <!-- Home Screen & Image -->
+    <section id="main">
+      <img src="assets/img/1557771551697.jpg" alt="" />
+      <h1>Hello I'm Charles</h1>
+      <h1>A Junior Full Stack Developer <i class="fas fa-code"></i></h1>
+    </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="row">
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Task Manager</span>
+              <p>Task Manager Application.</p>
+              <br />
+              <a
+                class="waves-effect waves-light btn modal-trigger btn1"
+                href="#modal1"
+                >View</a
+              >
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>Task Manager</h4>
+                  <h6>
+                    Technologies Used:
+                    <br />
+                    <br />
+                    <b>
+                      HTML | CSS | Javascript | Jquery | Materilize | Python |
+                      Flask | PostgreSQL</b
+                    >
+                  </h6>
+                  <br />
+                  <p>
+                    This application allows the user to update tasks with their
+                    own specific categories. The task can be updated with a due
+                    date and urgent flag if need be.
+                  </p>
+                  <br />
+                  <a
+                    href="https://charles-task-manager-flask-sql.herokuapp.com/"
+                    class="waves-effect waves-light btn"
+                    aria-label="link-to-live-site-task-manager"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Exit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Retro Bank</span>
+              <p>Simple Banking Application via Command Line</p>
+              <br />
+              <a
+                class="waves-effect waves-light btn modal-trigger btn1"
+                href="#modal2"
+                >View</a
+              >
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <h4>Retro Bank</h4>
+                  <h6>
+                    Technologies Used:
+                    <br />
+                    <br />
+                    <b> Python | Google Sheets API</b>
+                  </h6>
+                  <br />
+                  <p>
+                    Retro bank is a simple banking application which allows new
+                    & existing users to sign up for a retro account where they
+                    will receive a £500 joining bonus. This application has
+                    features such as check balance, deposit money, withdraw
+                    money and a mortgage calculator which will indicate how much
+                    a user can borrow based on their income and outgoings. user.
+                  </p>
+                  <br />
+                  <a
+                    href="https://retro-bank21.herokuapp.com/"
+                    target="_blank"
+                    class="waves-effect waves-light btn"
+                    aria-label="link-to-live-retro-bank-app"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Exit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Harry Potter Quiz</span>
+              <p>Interactive Online Quiz Application</p>
+              <br />
+              <a
+                class="waves-effect waves-light btn modal-trigger btn1"
+                href="#modal3"
+                >View</a
+              >
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <h4>Harry Potter Quiz</h4>
+                  <h6>
+                    Technologies Used:
+                    <br />
+                    <br />
+                    <b> HTML | CSS | Javascript</b>
+                  </h6>
+                  <br />
+                  <p>
+                    This Harry Potter Quiz is a fun and interactive quiz for all
+                    ages and for any occasion. This quiz is designed to test
+                    your wizarding knowledge of the famous Harry Potter
+                    Book/Films. Depending on how you score will depend on what
+                    house you are sorted into. So go head and find out where you
+                    belong in Hogwarts.
+                  </p>
+                  <br />
+                  <a
+                    href="https://charlesb91.github.io/harry-potter-quiz/"
+                    target="_blank"
+                    class="waves-effect waves-light btn"
+                    aria-label="link-to-live-harry-potter-quiz"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Exit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l3">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Visit Glasgow</span>
+              <p>Tourist Info Website for City of Glasgow</p>
+              <br />
+              <a
+                class="waves-effect waves-light btn modal-trigger btn1"
+                href="#modal4"
+                >View</a
+              >
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <h4>Visit Glasgow</h4>
+                  <h6>
+                    Technologies Used:
+                    <br />
+                    <br />
+                    <b> HTML | CSS </b>
+                  </h6>
+                  <br />
+                  <p>
+                    Visit Glasgow is a site which has been designed ‘to’ inform
+                    users of events being hosted in the city of Glasgow. This
+                    includes details of the main tourist attractions the city
+                    has to offer while attracting visitors from all over the
+                    globe. The Visit Glasgow site is particularly useful as it
+                    provides direct links to the various events and popular
+                    tourist hot spots - it ultimately demonstrates how exiting
+                    the city is.
+                  </p>
+                  <br />
+                  <a
+                    href="https://charlesb91.github.io/visit-glasgow/"
+                    target="_blank"
+                    class="waves-effect waves-light btn"
+                    aria-label="link-to-live-visit-glasgow-site"
+                    >Live Site</a
+                  >
+                </div>
+                <div class="modal-footer">
+                  <a
+                    href="#!"
+                    class="modal-close waves-effect waves-green btn-flat"
+                    >Exit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section -->
+    <section id="about-section" class="about-me">
+      <h2 class="about-head">About me</h2>
+      <div id="statement">
+        <p class="about-text">
+          I am a Junior Software Developer currently enrolled a Full Stack
+          Software Development Diploma and actively pursuing an entry into the
+          tech industry. I am a results-driven, dedicated professional with
+          solid experience in managing change complimentary from the financial
+          services industry. A Highly motivated and reliable individual,
+          effective communicator at all levels, good problem solving, analytical
+          and organisational skills. Highly motivated in either a team or
+          working on own initiative.
+        </p>
+      </div>
+    </section>
+    <section id="stack">
+      <h2 id="stack-heading">My Stack</h2>
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-python"></i>
+      <i class="fab fa-node-js"></i>
+    </section>
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2 id="footer-head">Contact Me</h2>
+      <div id="form">
+        <div class="row" id="row1">
+          <form class="col s12" id="contact-form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" required />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" required />
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" required />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="input-field col s12">
+              <textarea
+                id="textarea1"
+                class="materialize-textarea"
+                required
+              ></textarea>
+              <label for="textarea1">Message</label>
+            </div>
+            <a
+              class="waves-effect waves-light btn btn2"
+              id="register"
+              disabled="disabled"
+              onclick="sendMail()"
+              >Submit</a
+            >
+            <p id="return">Thanks For your message !</p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer id="socials">
+      <h2 id="social-text">Social</h2>
+      <div class="social">
+        <a
+          href="http://linkedin.com/in/charles-ballantyne-7a5988185"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/charlesballantyne/?hl=en"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://github.com/CharlesB91" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
