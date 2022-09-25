@@ -22,7 +22,223 @@
         emailjs.init("user_DJR7ZIPL1RXCmr5Z091nO");
       })();
     </script>
-    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Playfair+Display&display=swap");
+
+/* Global */
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: #ece2d0;
+}
+
+/* Nav Bar */
+
+#text {
+  margin-left: 10px;
+  color: #272932;
+  font-weight: bold;
+}
+
+#nav-link a {
+  color: #272932;
+  font-size: 150%;
+}
+
+#main {
+  height: 550px;
+  overflow: auto;
+  text-align: center;
+  color: #272932;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+#nav {
+  color: #272932;
+  background-color: #ece2d0;
+}
+
+.fas {
+  color: #272932;
+}
+
+/* Image */
+
+#main img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Portfolio Section */
+
+#portfolio {
+  height: 900px;
+  background-color: #272932;
+  transform: skew(0deg, -7deg)
+}
+
+#portfolio > h2 {
+  text-align: center;
+  color: #ece2d0;
+}
+
+.row {
+  padding: 20px;
+  overflow: auto;
+}
+
+.card {
+  height: 400px;
+}
+
+.card img {
+  height: 200px;
+  opacity: 0.6;
+}
+
+.wrap, .wrapheader {
+  padding-top: 120px;
+  transform: skew(0deg, 7deg)
+}
+
+/* About Me Section */
+
+.about-me {
+  overflow: hidden;
+  text-align: center;
+}
+
+#statement {
+  height: 200px;
+}
+
+#statement-text {
+  height: 100%;
+}
+
+.about-text {
+  font-size: 150%;
+  padding: 20px;
+}
+
+/* My Stack Section */
+
+#stack {
+  height: 300px;
+  text-align: center;
+  background-color: #272932;
+  overflow: hidden;
+}
+
+#stack-heading {
+  color: #ece2d0;
+}
+
+#stack i {
+    margin-top: 20px;
+    font-size: 300%;
+    padding: 20px;
+    color: #ece2d0;
+}
+/* Contact Form Section */
+
+#contact {
+  height: 700px;
+  overflow: hidden;
+}
+
+#footer-head {
+  text-align: center;
+  color: #272932;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+#row1 {
+  width: 900px;
+}
+
+.btn2 {
+  margin-top: 5px;
+  margin-left: 15px;
+  background-color: #272932;
+}
+
+.btn1 {
+  background-color: #272932;
+}
+
+#return {
+  display: none;
+}
+
+#socials {
+  text-align: center;
+  overflow: hidden;
+  height: 300px;
+  background-color: #272932;
+}
+
+.social a {
+  color: #ece2d0;
+  font-size: 300%;
+  padding: 20px;
+}
+#social-text {
+  color: #ece2d0;
+}
+
+@media screen and (max-width: 1083px) {
+    #statement {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+  #portfolio {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    height: 950px;
+  }
+
+  .card {
+    height: 180px;
+  }
+  #text {
+    font-size: 120%;
+  }
+  h1,
+  h2 {
+    font-size: 200%;
+  }
+  .about-text {
+    font-size: 110%;
+    padding: 20px;
+  }
+  #main img {
+    height: 250px;
+    width: 250px;
+  }
+}
+    </style>
 
     <title>Document</title>
   </head>
@@ -57,9 +273,65 @@
     </section>
     <!-- Portfolio Section -->
     <section id="portfolio">
-      <h2>My Portfolio</h2>
-      <div class="row">
-        <div class="col s12 m6 l3">
+      <h2 class="wrapheader">My Portfolio</h2>
+      <div class="row wrap">
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="coffeeclubhomepage.png">
+              </div>
+              <div class="card-content">
+                <h5>The Coffee Co</h5>
+                <p>E-commerce Web Application</p>
+              </div>
+              <div class="card-action">
+                <a href="https://thecoffeeco.herokuapp.com">The Coffee Co</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="engagefitnesshomepage.png">
+              </div>
+              <div class="card-content">
+                <h5>Engage Fitness</h5>
+                <p>Fiteness Web Application</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="harrypotterhome-screen.png">
+              </div>
+              <div class="card-content">
+                <h5>Harry Potter Quiz</h5>
+                <p>Online Quiz Application</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="visitglasgowhome.png">
+              </div>
+              <div class="card-content">
+                <h5>Visit Glasgow</h5>
+                <p>Tourist Site</p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="col s12 m6 l3">
           <div class="card">
             <div class="card-content">
               <span class="card-title">Task Manager</span>
@@ -251,7 +523,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- About Me Section -->
@@ -329,6 +601,7 @@
         ></a>
         <a href=""><i class="fab fa-facebook-square"></i></a>
         <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
       </div>
     </footer>
     <!-- Compiled and minified JavaScript -->
