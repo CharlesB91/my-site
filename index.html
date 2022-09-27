@@ -82,12 +82,25 @@
 
     #mainheading {
       padding-top: 70px;
+      animation: fadeInAnimation ease 4s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     /* Portfolio Section */
 
     #portfolio {
-      height: 900px;
+      height: 1500px;
       background-color: #272932;
       transform: skew(0deg, -7deg)
     }
@@ -103,17 +116,32 @@
     }
 
     .card {
-      height: 400px;
+      width: 600px;
+      height: 550px;
+    }
+
+    .example {
+      height: 300px;
+      opacity: 0.6;
     }
 
     .card img {
-      height: 200px;
-      opacity: 0.6;
+      height: 300px;
+    }
+
+    .card-position {
+      display: flex;
+      justify-content: right;
+    }
+
+    .card-position2 {
+      display: flex;
+      justify-content: left;
     }
 
     .wrap,
     .wrapheader {
-      padding-top: 120px;
+      padding-top: 80px;
       transform: skew(0deg, 7deg)
     }
 
@@ -287,7 +315,8 @@
   <section id="main">
     <div id="mainheading" class="row">
       <div class="col s12 m6">
-      <h1 class="annimation">Hi, I'm Charles <br> A Junior Developer <i class="fas fa-code"></i></h1></div>
+        <h1 class="annimation">Hi, I'm Charles <br> A Junior Developer <i class="fas fa-code"></i></h1>
+      </div>
       <div class="col s12 m6"><img class="profilepc" src="assets/img/1557771551697.jpg" alt="" /></div>
     </div>
   </section>
@@ -295,56 +324,64 @@
   <section id="portfolio">
     <h2 class="wrapheader">My Portfolio</h2>
     <div class="row wrap">
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 card-position">
         <div class="card">
           <div class="card-image">
-            <img src="coffeeclubhomepage.png">
+            <img class="example" src="coffeeclubhomepage.png">
           </div>
           <div class="card-content">
             <h5>The Coffee Co</h5>
-            <p>E-commerce Web Application</p>
+            <h6>E-commerce Web Application</h6>
+            <br>
+            <p>Technologys Used: HTML5, CSS3, JavaScript, Jquery, Python, Django, PostgreSQL, Stripe</p>
           </div>
           <div class="card-action">
             <a href="https://thecoffeeco.herokuapp.com" target="_blank">The Coffee Co</a>
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 card-position2">
         <div class="card">
           <div class="card-image">
-            <img src="engagefitnesshomepage.png">
+            <img class="example" src="engagefitnesshomepage.png">
           </div>
           <div class="card-content">
             <h5>Engage Fitness</h5>
-            <p>Fiteness Web Application</p>
+            <h6>Fiteness Web Application</h6>
+            <br>
+            <p>Technologys Used: HTML5, CSS3, JavaScript, Jquery, Python, Django, PostgreSQL</p>
           </div>
           <div class="card-action">
             <a href="https://engagefitness.herokuapp.com" target="_blank">Engage Fitness</a>
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l3">
+      <div class="col s12 m6 card-position">
         <div class="card">
           <div class="card-image">
-            <img src="harrypotterhome-screen.png">
+            <img class="example" src="harrypotterhome-screen.png">
           </div>
           <div class="card-content">
             <h5>Harry Potter Quiz</h5>
-            <p>Online Quiz Application</p>
+            <h6>Online Quiz Application</h6>
+            <br>
+            <p>Technologys Used: HTML5, CSS3, JavaScript</p>
           </div>
           <div class="card-action">
             <a href="https://charlesb91.github.io/harry-potter-quiz/" target="_blank">Harry Potter Quiz</a>
           </div>
         </div>
       </div>
-      <div class="col s12 m6 l3">
+      <div class="col s12 s12 m6 card-position2">
         <div class="card">
           <div class="card-image">
-            <img src="visitglasgowhome.png">
+            <img class="example" src="visitglasgowhome.png">
           </div>
           <div class="card-content">
             <h5>Visit Glasgow</h5>
-            <p>Tourist Site</p>
+            <h6>Tourist Site</h6>
+            <br>
+            <p>Technologys Used: HTML5, CSS3,</p>
           </div>
           <div class="card-action">
             <a href="https://charlesb91.github.io/visit-glasgow/" target="_blank">Visit Glasgow</a>
@@ -416,7 +453,8 @@
     <h2 id="social-text">Social</h2>
     <div class="social">
       <a href="http://linkedin.com/in/charles-ballantyne-7a5988185" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/charles.ballantyne.12" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.facebook.com/charles.ballantyne.12" target="_blank"><i
+          class="fab fa-facebook-square"></i></a>
       <a href="https://www.instagram.com/charlesballantyne/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://github.com/CharlesB91?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
     </div>
@@ -426,5 +464,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets/js/index.js"></script>
 </body>
+
+<script>
+  const wrapper = document.querySelectorAll(".example");
+
+  wrapper.forEach(wrap => {
+
+    wrap.addEventListener("mouseover", function (e) {
+      wrap.setAttribute('style', 'opacity:1;');
+    })
+
+    wrap.addEventListener("mouseout", function (e) {
+      wrap.setAttribute('style', 'opacity:0.6;');
+    })
+  })
+</script>
 
 </html>
