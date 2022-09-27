@@ -1,3 +1,19 @@
+// Porfilio Opacity Feature
+
+const wrapper = document.querySelectorAll(".example");
+
+wrapper.forEach(wrap => {
+
+  wrap.addEventListener("mouseover", function (e) {
+    wrap.setAttribute('style', 'opacity:1;');
+  })
+
+  wrap.addEventListener("mouseout", function (e) {
+    wrap.setAttribute('style', 'opacity:0.6;');
+  })
+})
+
+
 // Nav Bar
 
 $(document).ready(function () {
@@ -11,6 +27,7 @@ $(document).ready(function () {
 });
 
 $("").css("overflow", "hidden");
+
 
 // Contact Form
 
@@ -35,7 +52,12 @@ function sendMail() {
     })
     .then(
       function (response) {
-        console.log("SUCCESS", response);
+        M.toast({
+          html: "Thanks For Your Message. I Will Respond ASAP",
+          classes: 'green'
+        })
+        var form = document.getElementById('contact-form');
+        form.reset();
       },
       function (error) {
         console.log("FAILED", error);
