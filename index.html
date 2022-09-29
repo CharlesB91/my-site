@@ -22,6 +22,8 @@
 
     html,
     body {
+      width: 100%;
+      height: 100%;
       margin: 0px;
       padding: 0px;
       overflow-x: hidden;
@@ -116,17 +118,16 @@
     }
 
     .card {
-      width: 600px;
+      width: 550px;
       height: 550px;
     }
 
     .example {
-      height: 300px;
       opacity: 0.6;
     }
 
     .card img {
-      height: 300px;
+      height: 300px
     }
 
     .card-position {
@@ -244,11 +245,69 @@
       color: #272932;
     }
 
+    @media screen and (max-width: 600px) {
+      #portfolio {
+        height: 2500px !important;
+      }
+
+      .card-position {
+      justify-content: center;
+    }
+
+    .card-position2 {
+      justify-content: center;
+    }
+
+    #text {
+      font-size: 200%;
+    }
+
+    #main {
+      height: 600px;
+    }
+
+    #main img {
+      float: none;
+    }
+
+    #main h1 {
+      padding-top: 0;
+    }
+
+    #mainheading {
+      padding-top: 0;
+    }
+
+    .about-me {
+      height: 650px;
+    }
+
+    }
+
+
+    @media screen and (max-width: 780px) {
+      .card {
+      width: 400px;
+      height: 500px;
+    }
+
+    .card img {
+      height: 250px;
+    }
+    }
+
+    /* @media screen and (max-width: 1083px) {
+      #statement {
+        height: 300px;
+      }
+    }
+
     @media screen and (max-width: 1083px) {
       #statement {
         height: 300px;
       }
     }
+
 
     @media screen and (max-width: 1000px) {
       #portfolio {
@@ -256,7 +315,7 @@
       }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 380px) {
       #portfolio {
         height: 2500px;
       }
@@ -302,9 +361,8 @@
       #main h1 {
         padding-top: 50px;
       }
-
       
-    }
+    } */
 
 
   </style>
