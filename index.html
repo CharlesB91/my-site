@@ -14,389 +14,7 @@
       emailjs.init("user_DJR7ZIPL1RXCmr5Z091nO");
     })();
   </script>
-
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Playfair+Display&display=swap");
-
-    /* Global */
-
-    html,
-    body {
-      width: 100%;
-      height: 100%;
-      margin: 0px;
-      padding: 0px;
-      overflow-x: hidden;
-      font-family: "Merriweather Sans", sans-serif;
-      background-color: #ece2d0;
-    }
-
-    /* Nav Bar */
-
-    #text {
-      margin-left: 10px;
-      color: #272932;
-      font-weight: bold;
-    }
-
-    #nav-link a {
-      color: #272932;
-      font-size: 150%;
-    }
-
-    #main {
-      height: 550px;
-      overflow: auto;
-      text-align: center;
-      color: #272932;
-    }
-
-    h1 {
-      font-size: 250%;
-    }
-
-    #nav {
-      color: #272932;
-      background-color: #ece2d0;
-    }
-
-    .fas {
-      color: #272932;
-    }
-
-    /* Image */
-
-    #main img {
-      height: 300px;
-      width: 300px;
-      border-radius: 50%;
-      margin-top: 20px;
-      right: 200px;
-      float: left;
-    }
-
-    #main h1 {
-      padding-top: 100px;
-      float: right;
-      font-size: 350%;
-      text-decoration: underline;
-    }
-
-    #mainheading {
-      padding-top: 70px;
-      animation: fadeInAnimation ease 4s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-    }
-
-    @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
-    /* Portfolio Section */
-
-    #portfolio {
-      height: 1500px;
-      background-color: #272932;
-      transform: skew(0deg, -7deg)
-    }
-
-    #portfolio>h2 {
-      text-align: center;
-      color: #ece2d0;
-    }
-
-    .row {
-      padding: 20px;
-      overflow: auto;
-    }
-
-    .card {
-      width: 550px;
-      height: 550px;
-    }
-
-    .example {
-      opacity: 0.6;
-    }
-
-    .card img {
-      height: 300px
-    }
-
-    .card-position {
-      display: flex;
-      justify-content: right;
-    }
-
-    .card-position2 {
-      display: flex;
-      justify-content: left;
-    }
-
-    .wrap,
-    .wrapheader {
-      padding-top: 80px;
-      transform: skew(0deg, 7deg)
-    }
-
-    /* About Me Section */
-
-    .about-me {
-      padding-top: 80px;
-      overflow: hidden;
-      text-align: center;
-    }
-
-    #statement {
-      height: 200px;
-    }
-
-    #statement-text {
-      height: 100%;
-    }
-
-    .about-text {
-      font-size: 150%;
-      padding: 20px;
-    }
-
-    /* My Stack Section */
-
-    #stack {
-      height: 300px;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    #stack-heading {
-      color: #272932;
-    }
-
-    #stack i {
-      margin-top: 20px;
-      font-size: 300%;
-      padding: 20px;
-      color: #272932;
-    }
-
-    /* Contact Form Section */
-
-    #contact {
-      padding-top: 80px;
-      height: 750px;
-      overflow: hidden;
-      background-color: #272932;
-      transform: skew(0deg, 7deg)
-    }
-
-    .contact-section {
-      transform: skew(0deg, -7deg)
-    }
-
-    #footer-head {
-      text-align: center;
-      color: #ece2d0;
-    }
-
-    #form {
-      display: flex;
-      justify-content: center;
-    }
-
-    #row1 {
-      width: 900px;
-    }
-
-    .btn2 {
-      margin-top: 5px;
-      margin-left: 15px;
-      background-color: #272932;
-    }
-
-    .btn1 {
-      background-color: #272932;
-    }
-
-    #return {
-      display: none;
-    }
-
-    #socials {
-      text-align: center;
-      overflow: hidden;
-      height: 300px;
-      padding-top: 80px;
-    }
-
-    .social a {
-      color: #272932;
-      font-size: 300%;
-      padding: 20px;
-    }
-
-    #social-text {
-      color: #272932;
-    }
-
-
-    @media screen and (max-width: 780px) {
-      .card {
-        width: 400px;
-        height: 500px;
-      }
-
-      .card img {
-        height: 250px;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      #portfolio {
-        height: 2500px !important;
-      }
-
-      .card-position {
-        justify-content: center;
-      }
-
-      .card-position2 {
-        justify-content: center;
-      }
-
-      #text {
-        font-size: 150%;
-      }
-
-      #main {
-        height: 600px;
-      }
-
-      #main img {
-        float: none;
-      }
-
-      #main h1 {
-        padding-top: 0;
-      }
-
-      #mainheading {
-        padding-top: 0;
-      }
-
-      .about-me {
-        height: 650px;
-      }
-
-    }
-
-    @media screen and (max-width: 780px) {
-      .card {
-        width: 400px;
-        height: 500px;
-      }
-
-      .card img {
-        height: 250px;
-      }
-    }
-
-
-    @media screen and (max-width: 400px) {
-      #text {
-        font-size: 20px;
-      }
-
-      #main h1 {
-        font-size: 250%;
-      }
-
-      #main img {
-        width: 250px;
-        height: 250px;
-      }
-
-      #main {
-        height: 500px;
-      }
-    }
-
-    /* @media screen and (max-width: 1083px) {
-      #statement {
-        height: 300px;
-      }
-    }
-
-    @media screen and (max-width: 1083px) {
-      #statement {
-        height: 300px;
-      }
-    }
-
-
-    @media screen and (max-width: 1000px) {
-      #portfolio {
-        height: 600px;
-      }
-    }
-
-    @media screen and (max-width: 380px) {
-      #portfolio {
-        height: 2500px;
-      }
-
-      .card {
-        height: 500px;
-      }
-
-      .card img {
-      height: 200px;
-      width: 200px;
-    }
-      
-
-      #text {
-        font-size: 120%;
-      }
-
-      h1,
-      h2 {
-        font-size: 200%;
-      }
-
-      .about-text {
-        font-size: 110%;
-        padding: 20px;
-      }
-
-      #main img {
-        height: 250px;
-        width: 250px;
-        float: none;
-      }
-
-      #main {
-        height: 700px;
-      }
-
-      #mainheading {
-        padding-top: 0;
-      }
-
-      #main h1 {
-        padding-top: 50px;
-      }
-      
-    } */
-  </style>
-
-  <title>Document</title>
+  <title>Charles Ballantyne's Portfolio</title>
 </head>
 
 <body>
@@ -405,20 +23,21 @@
     <!-- Nav Bar -->
     <nav id="nav">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo" id="text">Charles Ballantyne</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        <a href="#!" class="brand-logo" id="text" aria-label="homepage">Charles Ballantyne</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger" aria-label="mobile-nav"><i
+            class="fas fa-bars"></i></a>
         <ul class="right hide-on-med-and-down" id="nav-link">
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#portfolio" aria-label="portfolio">Portfolio</a></li>
+          <li><a href="#about-section" aria-label="about">About</a></li>
+          <li><a href="#contact" aria-label="contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about-section">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#portfolio" aria-label="portfolio">Portfolio</a></li>
+      <li><a href="#about-section" aria-label="about">About</a></li>
+      <li><a href="#contact" aria-label="contact">Contact</a></li>
     </ul>
   </head>
   <!-- Home Screen & Image -->
@@ -427,7 +46,7 @@
       <div class="col s12 m6">
         <h1 class="annimation">Hi, I'm Charles <br> A Junior Developer <i class="fas fa-code"></i></h1>
       </div>
-      <div class="col s12 m6"><img class="profilepc" src="assets/img/1557771551697.jpg" alt="" /></div>
+      <div class="col s12 m6"><img class="profilepc" src="assets/img/1557771551697.jpg" alt="profile-picture" /></div>
     </div>
   </section>
   <!-- Portfolio Section -->
@@ -437,64 +56,66 @@
       <div class="col s12 m6 card-position">
         <div class="card">
           <div class="card-image">
-            <img class="example" src="assets/img/coffeeclubhomepage.png">
+            <img class="example" src="assets/img/coffeeclubhomepage.png" alt="coffeeco-homepage">
           </div>
           <div class="card-content">
             <h5>The Coffee Co</h5>
             <h6>E-commerce Web Application</h6>
             <br>
-            <p>Technologys Used: HTML5, CSS3, JavaScript, Jquery, Python, Django, PostgreSQL, Stripe</p>
+            <p>Technology’s Used: HTML5, CSS3, JavaScript, jQuery, Python, Django, PostgreSQL, AWS, Stripe</p>
           </div>
           <div class="card-action">
-            <a href="https://thecoffeeco.herokuapp.com" target="_blank">The Coffee Co</a>
+            <a href="https://thecoffeeco.herokuapp.com" target="_blank" aria-label="thecoffeeco">The Coffee Co</a>
           </div>
         </div>
       </div>
       <div class="col s12 m6 card-position2">
         <div class="card">
           <div class="card-image">
-            <img class="example" src="assets/img/engagefitnesshomepage.png">
+            <img class="example" src="assets/img/engagefitnesshomepage.png" alt="engage-fitness-homepage">
           </div>
           <div class="card-content">
             <h5>Engage Fitness</h5>
-            <h6>Fiteness Web Application</h6>
+            <h6>Fitness Web Application</h6>
             <br>
-            <p>Technologys Used: HTML5, CSS3, JavaScript, Jquery, Python, Django, PostgreSQL</p>
+            <p>Technology’s Used: HTML5, CSS3, JavaScript, jQuery, Python, Django, PostgreSQL, Cloudinary</p>
           </div>
           <div class="card-action">
-            <a href="https://engagefitness.herokuapp.com" target="_blank">Engage Fitness</a>
+            <a href="https://engagefitness.herokuapp.com" target="_blank" aria-label="engage-fitness">Engage Fitness</a>
           </div>
         </div>
       </div>
       <div class="col s12 m6 card-position">
         <div class="card">
           <div class="card-image">
-            <img class="example" src="assets/img/harrypotterhome-screen.png">
+            <img class="example" src="assets/img/harrypotterhome-screen.png" alt="harry-potter-quiz-homepage">
           </div>
           <div class="card-content">
             <h5>Harry Potter Quiz</h5>
             <h6>Online Quiz Application</h6>
             <br>
-            <p>Technologys Used: HTML5, CSS3, JavaScript</p>
+            <p>Technology’s Used: HTML5, CSS3, JavaScript</p>
           </div>
           <div class="card-action">
-            <a href="https://charlesb91.github.io/harry-potter-quiz/" target="_blank">Harry Potter Quiz</a>
+            <a href="https://charlesb91.github.io/harry-potter-quiz/" target="_blank"
+              aria-label="harry-potter-quiz">Harry Potter Quiz</a>
           </div>
         </div>
       </div>
       <div class="col s12 s12 m6 card-position2">
         <div class="card">
           <div class="card-image">
-            <img class="example" src="assets/img/visitglasgowhome.png">
+            <img class="example" src="assets/img/visitglasgowhome.png" alt="visit-glasgow-homepage">
           </div>
           <div class="card-content">
             <h5>Visit Glasgow</h5>
             <h6>Tourist Site</h6>
             <br>
-            <p>Technologys Used: HTML5, CSS3,</p>
+            <p>Technology’s Used: HTML5, CSS3,</p>
           </div>
           <div class="card-action">
-            <a href="https://charlesb91.github.io/visit-glasgow/" target="_blank">Visit Glasgow</a>
+            <a href="https://charlesb91.github.io/visit-glasgow/" target="_blank" aria-label="visit-glasgow">Visit
+              Glasgow</a>
           </div>
         </div>
       </div>
@@ -520,7 +141,6 @@
     <i class="fab fa-css3-alt"></i>
     <i class="fab fa-js"></i>
     <i class="fab fa-python"></i>
-    <i class="fab fa-node-js"></i>
   </section>
   <!-- Contact Form -->
   <section id="contact">
@@ -560,11 +180,10 @@
   <footer id="socials">
     <h2 id="social-text">Social</h2>
     <div class="social">
-      <a href="http://linkedin.com/in/charles-ballantyne-7a5988185" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/charles.ballantyne.12" target="_blank"><i
-          class="fab fa-facebook-square"></i></a>
-      <a href="https://www.instagram.com/charlesballantyne/" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com/CharlesB91?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="http://linkedin.com/in/charles-ballantyne-7a5988185" target="_blank"><i class="fab fa-linkedin"
+          aria-label="linkedin"></i></a>
+      <a href="https://github.com/CharlesB91?tab=repositories" target="_blank"><i class="fab fa-github"
+          aria-label="github"></i></a>
     </div>
   </footer>
   <!-- Compiled and minified JavaScript -->
