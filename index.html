@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,94 +17,97 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Playfair+Display&display=swap");
 
-/* Global */
+    /* Global */
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-  font-family: "Merriweather Sans", sans-serif;
-  background-color: #ece2d0;
-}
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+      font-family: "Merriweather Sans", sans-serif;
+      background-color: #ece2d0;
+    }
 
-/* Nav Bar */
+    /* Nav Bar */
 
-#text {
-  margin-left: 10px;
-  color: #272932;
-  font-weight: bold;
-}
+    #text {
+      margin-left: 10px;
+      color: #272932;
+      font-weight: bold;
+    }
 
-#nav-link a {
-  color: #272932;
-  font-size: 150%;
-}
+    #nav-link a {
+      color: #272932;
+      font-size: 150%;
+    }
 
-#main {
-  height: 550px;
-  overflow: auto;
-  text-align: center;
-  color: #272932;
-}
+    #main {
+      height: 550px;
+      overflow: auto;
+      text-align: center;
+      color: #272932;
+    }
 
-h1 {
-  font-size: 250%;
-}
+    h1 {
+      font-size: 250%;
+    }
 
-#nav {
-  color: #272932;
-  background-color: #ece2d0;
-}
+    #nav {
+      color: #272932;
+      background-color: #ece2d0;
+    }
 
-.fas {
-  color: #272932;
-}
+    .fas {
+      color: #272932;
+    }
 
-/* Image */
+    /* Image */
 
-#main img {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  margin-top: 20px;
-  right: 200px;
-  float: left;
-}
+    #main img {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      margin-top: 20px;
+      right: 200px;
+      float: left;
+    }
 
-#main h1 {
-  padding-top: 100px;
-  float: right;
-  font-size: 350%;
-  text-decoration: underline;
-}
+    #main h1 {
+      padding-top: 100px;
+      float: right;
+      font-size: 350%;
+      text-decoration: underline;
+    }
 
-#mainheading {
-  padding-top: 70px;
-  animation: 2s anim-lineUp ease-out;
-}
+    #mainheading {
+      padding-top: 70px;
+      animation: 2s anim-lineUp ease-out;
+    }
 
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
+    @keyframes anim-lineUp {
+      0% {
+        opacity: 0;
+        transform: translateY(80%);
+      }
 
-/* @keyframes fadeInAnimation {
+      20% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    /* @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
@@ -113,238 +117,249 @@ h1 {
   }
 } */
 
-/* Portfolio Section */
+    /* Portfolio Section */
 
-#portfolio {
-  height: 1500px;
-  background-color: #272932;
-  transform: skew(0deg, -7deg)
-}
+    #portfolio {
+      height: 1500px;
+      background-color: #272932;
+      transform: skew(0deg, -7deg)
+    }
 
-#portfolio>h2 {
-  text-align: center;
-  color: #ece2d0;
-}
+    #portfolio>h2 {
+      text-align: center;
+      color: #ece2d0;
+    }
 
-.row {
-  padding: 20px;
-  overflow: auto;
-}
+    .row {
+      padding: 20px;
+      overflow: auto;
+    }
 
-.card {
-  width: 550px;
-  height: 550px;
-}
+    .card {
+      width: 550px;
+      height: 550px;
+    }
 
-.example {
-  opacity: 0.6;
-}
+    .example {
+      opacity: 0.6;
+    }
 
-.card img {
-  height: 300px
-}
+    .card img {
+      height: 300px
+    }
 
-.card-position {
-  display: flex;
-  justify-content: right;
-}
+    .card-position {
+      display: flex;
+      justify-content: right;
+    }
 
-.card-position2 {
-  display: flex;
-  justify-content: left;
-}
+    .card-position2 {
+      display: flex;
+      justify-content: left;
+    }
 
-.wrap,
-.wrapheader {
-  padding-top: 80px;
-  transform: skew(0deg, 7deg)
-}
+    .wrap,
+    .wrapheader {
+      padding-top: 80px;
+      transform: skew(0deg, 7deg)
+    }
 
-/* About Me Section */
+    .revealUp {
+      opacity: 0;
+      visibility: hidden;
+    }
 
-.about-me {
-  padding-top: 80px;
-  overflow: hidden;
-  text-align: center;
-}
+    /* About Me Section */
 
-#statement {
-  height: 200px;
-}
+    .about-me {
+      padding-top: 80px;
+      overflow: hidden;
+      text-align: center;
+    }
 
-#statement-text {
-  height: 100%;
-}
+    #statement {
+      height: 200px;
+    }
 
-.about-text {
-  font-size: 150%;
-  padding: 20px;
-}
+    #statement-text {
+      height: 100%;
+    }
 
-/* My Stack Section */
+    .about-text {
+      font-size: 150%;
+      padding: 20px;
+    }
 
-#stack {
-  height: 300px;
-  text-align: center;
-  overflow: hidden;
-}
+    /* My Stack Section */
 
-#stack-heading {
-  color: #272932;
-}
+    #stack {
+      height: 300px;
+      text-align: center;
+      overflow: hidden;
+    }
 
-#stack i {
-  margin-top: 20px;
-  font-size: 300%;
-  padding: 20px;
-  color: #272932;
-}
+    #stack-heading {
+      color: #272932;
+    }
 
-/* Contact Form Section */
+    #stack i {
+      margin-top: 20px;
+      font-size: 300%;
+      padding: 20px;
+      color: #272932;
+    }
 
-#contact {
-  padding-top: 80px;
-  height: 750px;
-  overflow: hidden;
-  background-color: #272932;
-  transform: skew(0deg, 7deg)
-}
+    /* Contact Form Section */
 
-.contact-section {
-  transform: skew(0deg, -7deg)
-}
+    #contact {
+      padding-top: 80px;
+      height: 750px;
+      overflow: hidden;
+      background-color: #272932;
+      transform: skew(0deg, 7deg)
+    }
 
-#footer-head {
-  text-align: center;
-  color: #ece2d0;
-}
+    .contact-section {
+      transform: skew(0deg, -7deg)
+    }
 
-#form {
-  display: flex;
-  justify-content: center;
-}
+    #footer-head {
+      text-align: center;
+      color: #ece2d0;
+    }
 
-#row1 {
-  width: 900px;
-}
+    #form {
+      display: flex;
+      justify-content: center;
+    }
 
-.btn2 {
-  margin-top: 5px;
-  margin-left: 15px;
-  background-color: #272932;
-}
+    #row1 {
+      width: 900px;
+    }
 
-.btn1 {
-  background-color: #272932;
-}
+    .btn2 {
+      margin-top: 5px;
+      margin-left: 15px;
+      background-color: #272932;
+    }
 
-#return {
-  display: none;
-}
+    .btn1 {
+      background-color: #272932;
+    }
 
-#socials {
-  text-align: center;
-  overflow: hidden;
-  height: 300px;
-  padding-top: 80px;
-}
+    #return {
+      display: none;
+    }
 
-.social a {
-  color: #272932;
-  font-size: 300%;
-  padding: 20px;
-}
+    #socials {
+      text-align: center;
+      overflow: hidden;
+      height: 300px;
+      padding-top: 80px;
+    }
 
-#social-text {
-  color: #272932;
-}
+    .social a {
+      color: #272932;
+      font-size: 300%;
+      padding: 20px;
+    }
 
-/* Responsive Styles */
+    #social-text {
+      color: #272932;
+    }
 
-@media screen and (max-width: 780px) {
-  .card {
-    width: 400px;
-    height: 500px;
-  }
+    /* Responsive Styles */
 
-  .card img {
-    height: 250px;
-  }
-}
+    @media screen and (max-width: 780px) {
+      .card {
+        width: 400px;
+        height: 500px;
+      }
 
-@media screen and (max-width: 600px) {
-  #portfolio {
-    height: 2500px !important;
-  }
+      .card img {
+        height: 250px;
+      }
+    }
 
-  .card-position {
-    justify-content: center;
-  }
+    @media screen and (max-width: 600px) {
+      #portfolio {
+        height: 2500px !important;
+      }
 
-  .card-position2 {
-    justify-content: center;
-  }
+      .card-position {
+        justify-content: center;
+      }
 
-  #text {
-    font-size: 150%;
-  }
+      .card-position2 {
+        justify-content: center;
+      }
 
-  #main {
-    height: 600px;
-  }
+      #text {
+        font-size: 150%;
+      }
 
-  #main img {
-    float: none;
-  }
+      #main {
+        height: 600px;
+      }
 
-  #main h1 {
-    padding-top: 0;
-  }
+      #main img {
+        float: none;
+      }
 
-  #mainheading {
-    padding-top: 0;
-  }
+      #main h1 {
+        padding-top: 0;
+      }
 
-  .about-me {
-    height: 650px;
-  }
+      #mainheading {
+        padding-top: 0;
+      }
 
-}
+      .about-me {
+        height: 650px;
+      }
 
-@media screen and (max-width: 780px) {
-  .card {
-    width: 400px;
-    height: 500px;
-  }
+    }
 
-  .card img {
-    height: 250px;
-  }
-}
+    @media screen and (max-width: 780px) {
+      .card {
+        width: 400px;
+        height: 500px;
+      }
 
-@media screen and (max-width: 400px) {
-  #text {
-    font-size: 20px;
-  }
+      .card img {
+        height: 250px;
+      }
+    }
 
-  #main h1 {
-    font-size: 250%;
-  }
+    @media screen and (max-width: 400px) {
+      #text {
+        font-size: 20px;
+      }
 
-  #main img {
-    width: 250px;
-    height: 250px;
-  }
+      #main h1 {
+        font-size: 250%;
+      }
 
-  #main {
-    height: 500px;
-  }
-}
+      #main img {
+        width: 250px;
+        height: 250px;
+      }
+
+      #main {
+        height: 500px;
+      }
+    }
   </style>
   <!-- <link rel="stylesheet" href="assets/css/index.css"> -->
   <title>Charles Ballantyne's Portfolio</title>
+
+  <script>
+
+  </script>
 </head>
+
 <body>
+
   <head>
     <!-- Nav Bar -->
     <nav id="nav">
@@ -378,7 +393,7 @@ h1 {
   <!-- Portfolio Section -->
   <section id="portfolio">
     <h2 class="wrapheader">My Portfolio</h2>
-    <div class="row wrap">
+    <div class="row wrap revealUp">
       <div class="col s12 m6 card-position">
         <div class="card">
           <div class="card-image">
@@ -450,7 +465,7 @@ h1 {
   <!-- About Me Section -->
   <section id="about-section" class="about-me">
     <h2 class="about-head">About me</h2>
-    <div id="statement">
+    <div class="revealUp" id="statement">
       <p class="about-text">
         Technical Support Manager currently working for a leading video Tech Company whilst actively pursuing a career
         in software development. I am a recent graduate from Code Institute whilst achieving a Diploma in Full Stack
@@ -470,7 +485,7 @@ h1 {
   </section>
   <!-- Contact Form -->
   <section id="contact">
-    <div class="contact-section">
+    <div class="contact-section revealUp">
       <h2 id="footer-head">Contact Me</h2>
       <div id="form">
         <div class="row" id="row1">
@@ -515,6 +530,53 @@ h1 {
   <!-- Compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    // REVEAL //
+    gsap.utils.toArray(".revealUp").forEach(function (elem) {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: "top 80%",
+        end: "bottom 20%",
+        // markers: true,
+        onEnter: function () {
+          gsap.fromTo(
+            elem,
+            { y: 100, autoAlpha: 0 },
+            {
+              duration: 1.25,
+              y: 0,
+              autoAlpha: 1,
+              ease: "back",
+              overwrite: "auto"
+            }
+          );
+        },
+        onLeave: function () {
+          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+        },
+        onEnterBack: function () {
+          gsap.fromTo(
+            elem,
+            { y: -100, autoAlpha: 0 },
+            {
+              duration: 1.25,
+              y: 0,
+              autoAlpha: 1,
+              ease: "back",
+              overwrite: "auto"
+            }
+          );
+        },
+        onLeaveBack: function () {
+          gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
