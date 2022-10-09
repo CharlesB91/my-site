@@ -4,8 +4,8 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
@@ -66,19 +66,30 @@ h1 {
 
 #mainheading {
   padding-top: 70px;
-  animation: fadeInAnimation ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation: 2s anim-lineUp ease-out;
 }
 
-@keyframes fadeInAnimation {
+@keyframes anim-lineUp {
   0% {
     opacity: 0;
+    transform: translateY(80%);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 
   100% {
     opacity: 1;
+    transform: translateY(0%);
   }
+
+
 }
 
 /* Portfolio Section */
@@ -126,6 +137,11 @@ h1 {
 .wrapheader {
   padding-top: 80px;
   transform: skew(0deg, 7deg)
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* About Me Section */
