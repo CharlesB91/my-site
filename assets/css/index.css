@@ -98,7 +98,7 @@ head {
 .animate-charcter {
   text-transform: uppercase;
   background-image: linear-gradient(-225deg,
-  #FFBD00 0%, 
+      #FFBD00 0%,
       #272932 29%,
       #478978 67%,
       #DB7F8E 100%);
@@ -344,5 +344,9 @@ head {
 
   #main {
     height: 500px;
+  }
+
+  .about-me {
+    height: 800px;
   }
 }
