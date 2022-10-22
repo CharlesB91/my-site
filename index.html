@@ -28,7 +28,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   font-family: "Merriweather Sans", sans-serif;
-  background-color: #ece2d0;
+  background-color: #ece2d0 !important;
 }
 
 /* Nav Bar */
@@ -57,11 +57,16 @@ h1 {
 
 #nav {
   color: #272932;
-  background-color: #ece2d0;
+  background-color: transparent;
+  border-color: none !important;
 }
 
 .fas {
   color: #272932;
+}
+
+head {
+  background-color: transparent;
 }
 
 /* Image */
@@ -155,8 +160,8 @@ h1 {
 }
 
 .card {
-  width: 550px;
-  height: 550px;
+  width: 550px !important;
+  height: 550px !important;
 }
 
 .example {
@@ -186,6 +191,10 @@ h1 {
 .revealUp {
   opacity: 0;
   visibility: hidden;
+}
+
+.card-content {
+  height: 200px;
 }
 
 /* About Me Section */
@@ -376,7 +385,7 @@ h1 {
 
   <head>
     <!-- Nav Bar -->
-    <nav id="nav">
+    <nav class="nav-extended N/A transparent" id="nav">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo" id="text" aria-label="homepage">Charles Ballantyne</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger" aria-label="mobile-nav"><i
@@ -388,7 +397,6 @@ h1 {
         </ul>
       </div>
     </nav>
-
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#portfolio" aria-label="portfolio">Portfolio</a></li>
       <li><a href="#about-section" aria-label="about">About</a></li>
@@ -466,7 +474,7 @@ h1 {
             <h5>Visit Glasgow</h5>
             <h6>Tourist Site</h6>
             <br>
-            <p>Technology’s Used: HTML5, CSS3,</p>
+            <p>Technology’s Used: HTML5, CSS3</p>
           </div>
           <div class="card-action">
             <a href="https://charlesb91.github.io/visit-glasgow/" target="_blank" aria-label="visit-glasgow">Visit
